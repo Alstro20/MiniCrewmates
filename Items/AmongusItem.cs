@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Terraria.ModLoader;
+using Terraria.ID;
+
+namespace TutorialMod.Items
+{
+    public class AmongusItem : ModItem
+    {
+        public override void SetStaticDefaults()
+        {
+            // DisplayName.SetDefault("TutorialSword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+            Tooltip.SetDefault("among us");
+            DisplayName.SetDefault("Mini Crewmate");
+        }
+
+        public override void SetDefaults()
+        {
+            //base.SetDefaults();
+            item.width = 20;
+            item.height = 20;
+            item.value = 69;
+            item.rare = ItemRarityID.Cyan;
+
+            item.useTime = 20;
+            item.useAnimation = 20;
+            item.useStyle = ItemUseStyleID.HoldingUp;
+            item.autoReuse = true;
+
+            item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AmongUs").WithPitchVariance(.6f);
+        }
+
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.MeteorHelmet, 1);
+            recipe.AddIngredient(ItemID.MeteorLeggings, 1);
+            recipe.AddIngredient(ItemID.DirtBlock, 69);
+
+            recipe.AddTile(TileID.Cactus);
+
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
+    }
+}

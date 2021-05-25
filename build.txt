@@ -1,0 +1,3 @@
+displayName = TutorialMod
+author = Alstro20
+version = 0.1
