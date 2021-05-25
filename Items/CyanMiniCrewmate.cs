@@ -23,13 +23,13 @@ namespace MiniCrewmates.Items
             Tooltip.SetDefault("among us");
             DisplayName.SetDefault("Cyan Mini Crewmate");
         }
-
+        
         public override void SetDefaults()
         {
             //base.SetDefaults();
             item.width = 20;
             item.height = 20;
-            item.value = 69;
+            item.value = 20000;
             item.rare = ItemRarityID.Green;
 
             item.useTime = 20;
@@ -45,9 +45,9 @@ namespace MiniCrewmates.Items
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.MeteorHelmet, 1);
             recipe.AddIngredient(ItemID.MeteorLeggings, 1);
-            recipe.AddIngredient(ItemID.DirtBlock, 69);
+            recipe.AddIngredient(ItemID.Bone, 1);
 
-            recipe.AddTile(TileID.Cactus);
+            recipe.AddTile(TileID.Anvils);
 
             recipe.SetResult(this);
             recipe.AddRecipe();
