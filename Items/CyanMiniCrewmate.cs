@@ -8,13 +8,13 @@ using Terraria.ID;
 
 namespace TutorialMod.Items
 {
-    public class AmongusItem : ModItem
+    public class CyanMiniCrewmate : ModItem
     {
         public override void SetStaticDefaults()
         {
             // DisplayName.SetDefault("TutorialSword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
             Tooltip.SetDefault("among us");
-            DisplayName.SetDefault("Mini Crewmate");
+            DisplayName.SetDefault("Cyan Mini Crewmate");
         }
 
         public override void SetDefaults()
@@ -26,7 +26,7 @@ namespace TutorialMod.Items
             item.rare = ItemRarityID.Cyan;
 
             item.useTime = 20;
-            item.useAnimation = 20;
+            item.useAnimation = 60;
             item.useStyle = ItemUseStyleID.HoldingUp;
             item.autoReuse = true;
 
