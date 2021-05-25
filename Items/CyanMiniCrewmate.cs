@@ -30,7 +30,7 @@ namespace MiniCrewmates.Items
             item.width = 20;
             item.height = 20;
             item.value = 69;
-            item.rare = ItemRarityID.Cyan;
+            item.rare = ItemRarityID.Green;
 
             item.useTime = 20;
             item.useAnimation = 60;
