@@ -1,8 +1,8 @@
 using Terraria.ModLoader;
 
-namespace TutorialMod
+namespace MiniCrewmates
 {
-	public class TutorialMod : Mod
+	public class MiniCrewmates : Mod
 	{
 	}
 

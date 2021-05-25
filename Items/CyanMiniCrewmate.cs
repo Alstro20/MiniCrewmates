@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace TutorialMod.Items
+namespace MiniCrewmates.Items
 {
     public class CyanMiniCrewmate : ModItem
     {
