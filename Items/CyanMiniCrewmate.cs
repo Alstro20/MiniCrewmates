@@ -10,6 +10,13 @@ namespace TutorialMod.Items
 {
     public class CyanMiniCrewmate : ModItem
     {
+        /*
+         * 
+         * NOTE that ALL mini crewmates inherit their properties from this class.
+         * Changing anything other than the name will affect ALL mini crewmates.
+         * 
+         */
+
         public override void SetStaticDefaults()
         {
             // DisplayName.SetDefault("TutorialSword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
@@ -30,7 +37,7 @@ namespace TutorialMod.Items
             item.useStyle = ItemUseStyleID.HoldingUp;
             item.autoReuse = true;
 
-            item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AmongUs").WithPitchVariance(.6f);
+            item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/AmongUs").WithPitchVariance(.4f);
         }
 
         public override void AddRecipes()
