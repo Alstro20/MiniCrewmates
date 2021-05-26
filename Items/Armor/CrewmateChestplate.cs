@@ -9,8 +9,8 @@ using Terraria.ID;
 
 namespace MiniCrewmates.Items.Armor
 {
-    [AutoloadEquip(EquipType.Head)]
-    class CrewmateHelmet : ModItem
+    [AutoloadEquip(EquipType.Body)]
+    class CrewmateChestplate : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -19,10 +19,10 @@ namespace MiniCrewmates.Items.Armor
 
         public override void SetDefaults()
         {
-            item.width = 18;
-            item.height = 18;
+            item.width = 28;
+            item.height = 19;
             item.rare = ItemRarityID.Green;
-            item.defense = 6; //TODO: give this a good value
+            item.defense = 8; //TODO: give this a good value
         }
 
         //TODO: Enable this once all armor pieces are in
@@ -41,7 +41,7 @@ namespace MiniCrewmates.Items.Armor
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.MeteorHelmet, 1);
+            recipe.AddIngredient(ItemID.MeteorSuit, 1);
             recipe.AddIngredient(mod.ItemType("sus"));
 
             recipe.AddTile(TileID.Anvils);
