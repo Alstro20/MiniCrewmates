@@ -20,7 +20,7 @@ namespace MiniCrewmates.Items
         {
             item.CloneDefaults(ItemID.ZephyrFish);
             item.shoot = ModContent.ProjectileType<Projectiles.Pets.CyanCrewmatePet>();
-            item.buffType = ModContent.BuffType<Buffs.CyanCrewmatePet>();
+            item.buffType = ModContent.BuffType<Buffs.CrewmatePetBuff>();
         }
 
         public override void AddRecipes()

@@ -14,14 +14,16 @@ namespace MiniCrewmates.Projectiles.Pets
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Cyan Crewmate Pet");
-            Main.projFrames[projectile.type] = 1;
+            Main.projFrames[projectile.type] = 4;
             Main.projPet[projectile.type] = true;
         }
 
         public override void SetDefaults()
         {
-            projectile.CloneDefaults(ProjectileID.ZephyrFish);
-            aiType = ProjectileID.ZephyrFish;
+            projectile.CloneDefaults(ProjectileID.BabyDino);
+            aiType = ProjectileID.BabyDino;
+            projectile.width = 40;
+            projectile.height = 40;
         }
 
         public override bool PreAI()

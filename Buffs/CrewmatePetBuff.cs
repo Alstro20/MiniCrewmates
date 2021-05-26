@@ -8,12 +8,12 @@ using Terraria.ModLoader;
 
 namespace MiniCrewmates.Buffs
 {
-    class CyanCrewmatePet : ModBuff
+    class CrewmatePetBuff : ModBuff
     {
         public override void SetDefaults()
         {
-            DisplayName.SetDefault("Cyan Mini Crewmate");
-            Description.SetDefault("A Cyan Crewmate is following you!");
+            DisplayName.SetDefault("Mini Crewmate");
+            Description.SetDefault("A mini Crewmate is following you!");
             Main.buffNoTimeDisplay[Type] = true;
             Main.vanityPet[Type] = true;
         }
