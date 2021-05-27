@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniCrewmates.Items
+namespace MiniCrewmates.Items.MiniCrewmates
 {
     class OrangeMiniCrewmate : CyanMiniCrewmate
     {
