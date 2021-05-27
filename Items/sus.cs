@@ -21,7 +21,18 @@ namespace MiniCrewmates.Items
         {
             item.width = 32;
             item.height = 32;
-            item.value = 420;
+
+            item.maxStack = 999;
+
+            //item.useStyle = ItemUseStyleID.SwingThrow;
+            //item.useTime = 10;
+            //item.useAnimation = 15;
+
+            //item.useTurn = true;
+            //item.autoReuse = true;
+            //item.consumable = true;
+            //item.createTile = ModContent.TileType<susTile>();
+
             item.rare = ItemRarityID.Green;
         }
 
